@@ -39,7 +39,7 @@ function getCustomers() {
   });
 }
 
-// Get all customers stored in the database
+// Get all orders stored in the database
 function getOrders() {
   const query = "SELECT * FROM orders ORDER BY id";
   return new Promise((resolve, reject) => {
