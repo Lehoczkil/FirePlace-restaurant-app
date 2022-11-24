@@ -25,7 +25,22 @@ function getMeals() {
   });
 }
 
+// Get all customers stored in the database
+function getCustomers() {
+  const query = "SELECT * FROM customers ORDER BY name";
+  return new Promise((resolve, reject) => {
+    pool.query(query, (err, res) => {
+      if (err) {
+        reject(err);
+      } else {
+        resolve(res.rows);
+      }
+    });
+  });
+}
+
 // Exports the queries to be used by the server
 module.exports = {
-    getMeals
-}
+  getMeals,
+  getCustomers
+};
