@@ -5,8 +5,6 @@ DROP TABLE IF EXISTS orders;
 CREATE TABLE customers (
     id SERIAL PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
-    address VARCHAR(255),
-    phone VARCHAR(255),
     email VARCHAR(255) NOT NULL
 );
 
