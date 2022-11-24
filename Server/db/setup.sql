@@ -16,7 +16,8 @@ CREATE TABLE meals (
 
 CREATE TABLE orders (
     id SERIAL PRIMARY KEY,
-    customer_id INTEGER
+    customer_id INTEGER.
+    meal_ids INTEGER[],
     total FLOAT NOT NULL,
 );
 
