@@ -11,14 +11,14 @@ CREATE TABLE customers (
 CREATE TABLE meals (
     id SERIAL PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
-    price FLOAT NOT NULL,
+    price FLOAT NOT NULL
 );
 
 CREATE TABLE orders (
     id SERIAL PRIMARY KEY,
-    customer_id INTEGER.
+    customer_id INTEGER,
     meal_ids INTEGER[] NOT NULL,
-    total FLOAT NOT NULL,
+    total FLOAT NOT NULL
 );
 
 ALTER TABLE ONLY orders
