@@ -17,4 +17,10 @@ app.get("/customers", async (req, res) => {
   return res.send(customers);
 });
 
+// Endpoint for getting all orders from db
+app.get("/orders", async (req, res) => {
+    let orders = await db.getOrders();
+    return res.send(orders);
+  });
+
 app.listen(port);
