@@ -1,5 +1,5 @@
 <template>
-    <h1>FirePlace</h1>
+    <h1>Restaurant</h1>
 </template>
 
 
